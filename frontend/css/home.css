@@ -1,0 +1,693 @@
+.center{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#main{
+	margin: 2.5% 0 0 0;
+	width: 100%;
+	font-family: arial;
+	font-size:14.5px;
+	/*height: 100%;*/
+	/*margin: 0 auto;*/
+	/*background: white;*/
+	background: #f4f5f7;
+	display: block;
+	/*overflow: hidden;*/
+}
+
+#left{
+	width: 12%;
+	margin: 0.5% 1%;
+	padding: 1%;
+	padding-left: 0;
+	margin-left: 11%;
+	background: #f4f5f7;
+	border-right: 0.5px solid #d6d8db;
+	/*border-radius: 5px;*/
+	float: left;
+	/*overflow: hidden;*/
+}
+
+#left a{
+	padding: 2px 10px;
+	color: #6b6f75;
+	text-decoration: none;
+}
+
+#left a:hover{
+	/*background: #c3c7cc;*/
+	color: #9b2b40;
+	font-size: 1.09em;
+	border-left: 2px solid #a01e1e;
+}
+
+#left ul{
+	padding-left: 0;
+	margin-left: 1px; 
+}
+
+#left li{
+	margin: 7px 0; 
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 15px;
+}
+
+#mainContent{
+	width: 38%;
+	/*height: 100%;*/
+	margin: 0.5% 4%;
+	padding: 0.5%;
+	/*background: rgb(0, 75, 255, 0.12);*/
+	background: #f4f5f7;
+	border: 0px solid black;
+	/*border-radius: 5px;*/
+	float: left;
+	/*overflow: hidden;*/
+}
+
+#right{
+	width: 12%;
+	/*height: 70%;*/
+	margin: 0.5% 4%;
+	padding: 0;
+	margin-right: 0;
+	background: rgb(0, 75, 255, 0.12);
+	border: 0px solid black;
+	/*border-radius: 5px;*/
+	overflow: hidden;
+}
+
+.rightTop{
+	background: #f4f5f7;
+	border: 1px solid #c3c7cc;
+	margin:0;
+	padding: 2px 0;
+	font-size: 14px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.rightBottom{
+	background: #fcfcfc;
+	margin:0;
+	padding: 2px 4px;
+	border: 1px solid #c3c7cc;
+	border-right: 1px solid #c3c7cc; 
+	border-bottom: 1px solid #c3c7cc;
+
+}
+
+#right ul{
+	padding: 0;
+}
+
+.rightBottom li{
+	list-style-type: none;
+
+}
+
+#right li{
+	margin: 10px;
+	color: #2e3f68;
+}
+
+#right li a{
+	color: #2e3f68;
+	text-decoration: none;
+	width: 100%;
+	pointer-events: none;
+}
+
+.currentCategory{
+	border-left: 4px solid #a01e1e;
+	background: lightgray;
+}
+
+.jumbotron{
+	width: 100%;
+	background: #fcfcfc;
+	margin: 2.5%;
+	padding: 3%;
+	border: 0.5px solid #d6d8db;
+	border-radius: 2px;
+	font-size: 1.05em;
+}
+
+.question{
+	padding: 0 0 5px 0;
+	margin: 0;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #a01e1e;
+}
+
+#left img{
+	width: 13px;
+	height: 13px;
+}
+
+.modal{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	display: none;
+}
+
+.q-Content{
+	width: 600px;
+	height: 300px;
+	margin: 150px auto;
+	background: white;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+}
+
+.q-Content input{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 20px; 
+	padding: 5px 5px;
+	border-radius: 6px;
+	border: 2px solid gray;
+}
+
+.q-Content input:focus{
+	border-radius: 6px;
+	border: 2px solid #a01e1e;
+	outline: none;
+}
+
+.q-Content textarea{
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 5px 5px;
+	border-radius: 6px;
+	border: 2px solid gray;
+}
+
+textarea:focus{
+	border-radius: 6px;
+	border: 2px solid #a01e1e;
+	outline: none;
+}
+
+.q-Content input[type="submit"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 8px 8px;
+	/*margin-right: 10px;*/
+	border-radius: 6px;
+	width: 20%;
+	cursor: pointer;
+}
+
+.cross{
+	float: right;
+	padding: 0;
+	margin: 0;
+	font-size: 22px;
+	font-weight: bold;
+	color: gray;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+button[class="addAnswer"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="addAnswer"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="addAnswer"]:focus{
+	outline: none;
+}
+
+.loading{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	display: block;
+}
+
+.loading img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 330px;
+  	height: 50px;
+  	width: 50px;
+}
+
+.wrapper{
+	display: none;
+}
+
+.anchorQuestion{
+	text-decoration: none;
+}
+
+button[class="addComment"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="addComment"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="addComment"]:focus{
+	outline: none;
+}
+
+button[class="viewComments"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="viewComments"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="viewComments"]:focus{
+	outline: none;
+}
+
+a[class="followBtn"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+a[class="followBtn"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+a[class="followBtn"]:focus{
+	outline: none;
+}
+
+a[class="addLike"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+a[class="addLike"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+a[class="addLike"]:focus{
+	outline: none;
+}
+
+a[class="delete"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+a[class="delete"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+a[class="delete"]:focus{
+	outline: none;
+}
+
+.headline{
+	/*background: blue;*/
+	background-image: url("../img/bg2.jpg");
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
+	width: 100%;
+	margin:0;
+	height: 30%;
+}
+
+.imgHeadline{
+	width: 20%;
+	height: 80%;
+	/*background: blue;*/
+	padding-left: 200px;
+	padding-top: 50;
+	float: left;
+}
+
+.contentHeadline{
+	float: left;
+	padding-top: 55;
+}
+
+button[class="showQuestions"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="showQuestions"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="showQuestions"]:focus{
+	outline: none;
+}
+
+button[class="showAnswers"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="showAnswers"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="showAnswers"]:focus{
+	outline: none;
+}
+
+.center{
+	width: 50%;
+	margin: 0 auto;
+	/*background: gray;*/
+	margin-top: 1%;
+}
+
+.center input[type="text"]{
+	padding: 5px 5px;
+	margin-top: 14px; 
+	margin-bottom: 0;
+	margin-left: 0px;
+	margin-right: 7px;
+	border-radius: 6px;
+	border: 2px solid gray;
+	width: 230px;
+	background: white;
+}
+
+.center input:focus{
+	border-radius: 6px;
+	border: 2px solid #a01e1e;
+	outline: none;
+}
+
+button[class="cgpass"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="cgpass"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="cgpass"]:focus{
+	outline: none;
+}
+
+button[class="cgo"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="cgo"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="cgo"]:focus{
+	outline: none;
+}
+
+button[class="da"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="da"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="da"]:focus{
+	outline: none;
+}
+
+input[class="change"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+input[class="change"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+input[class="change"]:focus{
+	outline: none;
+}
+
+input[class="changeSpecial"]{
+	border-width: 0px;
+	color: white;
+	background: #ea620e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+input[class="changeSpecial"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #ea620e;
+	cursor: pointer;
+}
+
+input[class="changeSpecial"]:focus{
+	outline: none;
+}
+
+button[class="ac"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="ac"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="ac"]:focus{
+	outline: none;
+}
+
+button[class="rc"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+}
+
+button[class="rc"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="rc"]:focus{
+	outline: none;
+}
+
+a[class="delCom"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+a[class="delCom"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+a[class="delCom"]:focus{
+	outline: none;
+}
+
+button[class="subImg"]{
+	border-width: 0px;
+	color: white;
+	background: #a01e1e;
+	margin-top: 10px;
+	padding: 9px 9px;
+	margin-right: 10px;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+button[class="subImg"]:hover{
+	border-bottom: 2px solid #d6d8db;
+	border-right: 2px solid #d6d8db;
+	border-left: 2px solid #d6d8db;
+	color: white;
+	background: #a01e1e;
+	cursor: pointer;
+}
+
+button[class="subImg"]:focus{
+	outline: none;
+}
+
